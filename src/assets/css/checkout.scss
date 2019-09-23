@@ -1,3 +1,31 @@
 .checkout-container {
-    
+    display: flex;
+    flex-direction: column;
+    background: #FFFFFF;
+    .checkout-header {
+        margin-bottom: 20px;
+        border-bottom: 2px solid grey;
+        .checkout-nav {
+            display: flex;
+            width: 100%;
+            .nav-links {
+                display: flex;
+                .nav-item a {
+                    display: inline-block;
+                    padding: 10px 15px;
+                    text-decoration: none;
+                }
+                .nav-item:hover {
+                    border-bottom: 2px solid black;
+                }
+            }
+        }
+    }
+
+    .checkout-body {
+
+        .checkout-product {
+            background: #F9F9F9;
+        }
+    }
 }
