@@ -4,10 +4,10 @@ body {
   margin: 0;
 }
 #app {
-    font-family: 'Avenir', Helvetica, Arial, sans-serif;
+    font-family: Helvetica, 'Avenir' , Arial, sans-serif;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
-    color: #2c3e50;
+    color: #162A62;
     background: linear-gradient(140deg, #EB6133 50%, #162A62 50%);
     background: -o-linear-gradient(140deg, #EB6133 50%, #162A62 50%);
     background: -webkit-linear-gradient(140deg, #EB6133 50%, #162A62 50%);
@@ -15,6 +15,7 @@ body {
     padding: 70px 60px;
     ul {
       list-style-type: none;
+      padding: 0px;
     }
 }
 
@@ -22,7 +23,6 @@ body {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  width: 100%;
 }
 
 .column {

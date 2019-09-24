@@ -2,13 +2,16 @@
     display: flex;
     flex-direction: column;
     background: #FFFFFF;
+
     .checkout-header {
+        display: flex;
         .checkout-nav {
             display: flex;
             width: 100%;
+            padding: 0px 40px;
             .nav-links {
                 display: flex;
-                border-bottom: 2px solid lightgrey;
+                border-bottom: 2px solid #F2F2F2;
                 width: 100%;
                 margin: 0px 0px;
                 padding: 0px 40px;
@@ -16,13 +19,21 @@
                 .nav-item {
                     border-bottom: 2px solid white;
                 }
-                .nav-item a {
-                    display: inline-block;
-                    padding: 30px 15px 26px 15px;
-                    text-decoration: none;
+                .nav-item {
+                    a {
+                        display: inline-block;
+                        padding: 30px 15px 26px 15px;
+                        text-decoration: none;
+                        color: #EBEBEB;
+                        font-weight: 500;
+                    }
+                    .active {
+                        color: #EB6133;
+                        border-bottom: 2px solid #EB6133;
+                    }
                 }
-                .nav-item:hover {
-                    border-bottom: 2px solid black;
+                .nav-item a:active {
+                    color: #EB6133;
                 }
             }
         }
@@ -33,9 +44,85 @@
         .checkout-product {
             background: #F9F9F9;
             padding: 30px;
+            .product-header {
+                width: 100%;
+                text-align: center;
+                margin-bottom: 30px;
+                .product-image {
+                    width: 45%; 
+                }
+            }
+            .product-body {
+                p {
+                    margin: 0px;
+                }
+                .product-price {
+                    margin: 0px 0px 40px;
+                    font-size: 2rem;
+                    span {
+                        font-size: 1.5rem;
+                    }
+                }
+                .product-details {
+                    .product-item {
+                        margin-bottom: 15px;
+                    }
+                }
+            }
         }
-        .checkout-details {
-            padding: 40px;
+        .checkout-payment {
+            padding: 0px 40px;
+
+            .payment-header {
+                margin-bottom: 40px;
+                .payment-title {
+                    margin: 0px;
+                    font-size: 3.5rem;
+                }
+                .payment-subtitle {
+                    margin: 0px;
+                }
+            }
+            .payment-body {
+                .form {
+                    display: flex;
+                    flex-direction: column;
+                    .form-group {
+                        display: flex;
+                        flex-direction: column;
+                        flex: 1;
+                        margin: 20px 10px;
+                        .form-label {
+                            margin-bottom: 10px;
+                        }
+                        input[type=text] {
+                            outline: 0;
+                            border-bottom: 2px solid lightgrey;
+                            border-top: 0px;
+                            border-left: 0px;
+                            border-right: 0px;
+                            font-size: 1.2rem;
+                        }
+                        .form-input {
+                            padding: 7px 2px;
+                        }
+                    }
+                    .cc-expiry {
+                        display: flex;
+                        flex-direction: row;
+                        margin-bottom: 20px;
+                    }
+                    .form-btn {
+                        border-radius: 3px;
+                        border-color: #EB6133;
+                        background-color: #EB6133;
+                        padding: 15px 10px;
+                        font-size: 1.5rem;
+                        font-weight: 600;
+                        color: #FFFFFF;
+                    }
+                }
+            }
         }
     }
 }
