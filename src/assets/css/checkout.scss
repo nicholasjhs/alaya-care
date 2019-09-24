@@ -6,7 +6,6 @@
     .checkout-header {
         display: flex;
         .checkout-nav {
-            display: flex;
             width: 100%;
             padding: 0px 40px;
             .nav-links {
@@ -85,8 +84,6 @@
             }
             .payment-body {
                 .form {
-                    display: flex;
-                    flex-direction: column;
                     .form-group {
                         display: flex;
                         flex-direction: column;
@@ -108,9 +105,7 @@
                         }
                     }
                     .cc-expiry {
-                        display: flex;
-                        flex-direction: row;
-                        margin-bottom: 20px;
+                        margin-bottom: 60px;
                     }
                     .form-btn {
                         border-radius: 3px;
@@ -120,6 +115,7 @@
                         font-size: 1.5rem;
                         font-weight: 600;
                         color: #FFFFFF;
+                        width: 100%;
                     }
                 }
             }

@@ -49,12 +49,8 @@
                     </div>
                     <div class="cc-expiry">
                         <div class="form-group">
-                            <label class="form-label" for="ccmonth">Expiry month</label>
-                            <input class="form-input" type="text" id="ccmonth" name="ccmonth" placeholder="">
-                        </div>
-                        <div class="form-group">
-                            <label class="form-label" for="ccyear">Expiry year</label>
-                            <input class="form-input" type="text" id="ccyear" name="ccyear" placeholder="">
+                            <label class="form-label" for="ccexpiry">Expiry date (MM/YY)</label>
+                            <input class="form-input" type="text" id="ccexpiry" name="ccexpiry" placeholder="">
                         </div>
                         <div class="form-group">
                             <label class="form-label" for="cvv">CVV</label>
