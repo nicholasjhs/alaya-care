@@ -1,0 +1,31 @@
+.checkout-nav {
+    width: 100%;
+    padding: 0px 40px;
+    .nav-links {
+        display: flex;
+        border-bottom: 2px solid #F2F2F2;
+        width: 100%;
+        margin: 0px 0px;
+        padding: 0px 40px;
+
+        .nav-item {
+            border-bottom: 2px solid white;
+        }
+        .nav-item {
+            a {
+                display: inline-block;
+                padding: 30px 15px 26px 15px;
+                text-decoration: none;
+                color: #EBEBEB;
+                font-weight: 500;
+            }
+            .active {
+                color: #EB6133;
+                border-bottom: 2px solid #EB6133;
+            }
+        }
+        .nav-item a:active {
+            color: #EB6133;
+        }
+    }
+}
