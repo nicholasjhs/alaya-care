@@ -15,8 +15,8 @@
               </ul>
           </nav>
       </div>
-      <div class="checkout-body">
-          <div class="checkout-product">
+      <div class="checkout-body row">
+          <div class="column checkout-product">
               <img class="product-image" src="https://via.placeholder.com/150">
               <h5 class="">13-inch MacBook Pro - Space Grey</h5>
               <p class="">To pay</p>
@@ -28,7 +28,7 @@
               </ul>
 
           </div>
-          <div class="checkout-details">
+          <div class="column checkout-details">
               <h2 class="">Payment Details</h2>
               <h5 class="">Fill in the info below to continue</h5>
               <form>
