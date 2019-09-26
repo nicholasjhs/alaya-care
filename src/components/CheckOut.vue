@@ -32,7 +32,7 @@ export default {
   data() {
       return {
           product: {
-              image: "https://via.placeholder.com/150",
+              image: "https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/mbp13touch-space-select-201807?wid=904&hei=840&fmt=jpeg&qlt=95&.v=1529520060550",
               name: "13-inch MacBook Pro - Space Grey",
               price: "1,799.00",
               details: ["Intel Core i5 2.3GHz", "8GB memory", "256GB SSD storage"]
