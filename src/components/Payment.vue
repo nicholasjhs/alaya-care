@@ -20,7 +20,6 @@
                 <input class="form-input" type="text" id="ccname" name="ccname" v-model.lazy="$v.ccForm.name.$model" placeholder="">
                 <div v-if="errors" class="error">
                     <p v-if="!$v.ccForm.name.required">field is required</p>
-                    <p v-if="!$v.ccForm.name.isFormat">field can only contain alphabet and special characters</p>
                 </div>
             </div>
             <div class="cc-expiry">
@@ -29,7 +28,7 @@
                     <input class="form-input" type="text" id="ccexpiry" name="ccexpiry" v-model.lazy="$v.ccForm.expiry.$model" placeholder="">
                     <div v-if="errors" class="error">
                         <p v-if="!$v.ccForm.expiry.required">field is required</p>
-                        <p v-if="!$v.ccForm.expiry.isGoodFormat">field must have format MM/YY</p>
+                        <p v-if="!$v.ccForm.expiry.isGoodFormat">field must have format MM(0-12)/YY(greater than 18)</p>
                     </div>
                 </div>
                 <div class="form-group">
@@ -85,16 +84,14 @@ export default {
           },
           name: {
               required,
-              isFormat(name) {
-                  return (/\D/.test(name));
-              },
           },
           expiry: {
               required,
               isGoodFormat(expiry) {
                   return (
                       /^\d{2}\/\d{2}$/.test(expiry) &&
-                      this.isCorrectMonth(expiry.substring(0, 2))
+                      this.isCorrectMonth(expiry.substring(0, 2)) &&
+                      this.isCorrectYear(expiry.substring(3))
                       );
               },
           },
@@ -111,7 +108,6 @@ export default {
   methods: {
       submit() {
           this.errors = this.$v.ccForm.$anyError;
-          console.log("this errors: " + this.errors);
           this.empty = !this.$v.ccForm.$anyDirty;
           if (this.errors === false && this.isTouched === false) {
               this.isSuccessfulSubmit = true;
@@ -131,6 +127,13 @@ export default {
           }
           return false;
       },
+      isCorrectYear(substring) {
+          var num = parseInt(substring);
+          if (num < 19) {
+              return false;
+          }
+          return true;
+      }
   }
 }
 </script>
