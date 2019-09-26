@@ -34,3 +34,16 @@ body {
   flex-basis: 100%;
   flex: 1;
 }
+
+.error {
+  margin-top: 10px;
+  color: red;
+
+  p {
+    margin: 0px;
+  }
+}
+
+.success {
+  color: green;
+}

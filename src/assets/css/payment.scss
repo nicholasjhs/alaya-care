@@ -9,6 +9,7 @@
     }
 }
 .payment-body {
+    margin-bottom: 60px;
     .form {
         .form-group {
             display: flex;
@@ -30,18 +31,18 @@
                 padding: 7px 2px;
             }
         }
-        .cc-expiry {
-            margin-bottom: 60px;
-        }
-        .form-btn {
-            border-radius: 3px;
-            border-color: #EB6133;
-            background-color: #EB6133;
-            padding: 15px 10px;
-            font-size: 1.5rem;
-            font-weight: 600;
-            color: #FFFFFF;
-            width: 100%;
-        }
+    }
+}
+
+.payment-footer {
+    .form-btn {
+        border-radius: 3px;
+        border-color: #EB6133;
+        background-color: #EB6133;
+        padding: 15px 10px;
+        font-size: 1.5rem;
+        font-weight: 600;
+        color: #FFFFFF;
+        width: 100%;
     }
 }
