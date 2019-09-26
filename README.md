@@ -12,6 +12,10 @@ npm install
 ```
 npm run serve
 ```
+### It will run locally at
+```
+http://localhost:8080/
+```
 
 ## Test Cases
 
